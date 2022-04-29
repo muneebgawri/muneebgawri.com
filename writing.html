@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <title>Blog</title>
+    <link href="css/blog_page.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon_1.ico" type="image/x-icon">
+    <style>
+      @keyframes animate-circle {
+      	from {
+      		transform: scale(0);
+      		opacity: 1;
+      	}
+      	to {
+      		transform: scale(1);
+      		opacity: 0;
+      	}
+      }
+      #preloader{
+      	width: 100%;
+      	height: 100%;
+      	position: fixed;
+      	top: 0;
+      	left: 0;
+      	z-index: 999;
+      	background: #1C1C1C;
+      	background: linear-gradient(to right, rgba(36, 31, 31, 1) 0%, rgba(36, 31, 31, 1) 32%, rgba(74, 71, 70, 1) 100%);
+      }
+      .loader {
+      	position: fixed;
+      	top: 50%;
+      	left: 50%;
+      	height: 10rem;
+      	width: 10rem;
+      	transform: translateX(-50%) translateY(-50%);
+      }
+      .loader > .circle {
+      	position: absolute;
+      	height: inherit;
+      	width: inherit;
+      	background: #B66449;
+      	border-radius: 0;
+      	animation: animate-circle 2s cubic-bezier(.9, .24, .62, .79) infinite;
+      }
+      .loader > .circle:nth-of-type(1) {
+      	animation-delay: 0s;
+      }
+      .loader > .circle:nth-of-type(2) {
+      	animation-delay: calc(2s / -3);
+      }
+      .loader > .circle:nth-of-type(3) {
+      	animation-delay: calc(2s / -6);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <main class="main blog_page">
+      <canvas class="noise" id="noise"></canvas>
+      <div class="header">
+        <canvas class="noise noise--inner" id="noise_menu"></canvas>
+        <div class="header__left">
+          <div class="header__letter">P</div>
+          <div class="header__socials"><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#fb"></use>
+              </svg></a><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#tw"></use>
+              </svg></a><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#in"></use>
+              </svg></a></div>
+        </div>
+        <div class="header__right">
+          <ul class="blog_page-menu">
+            <li><a class="js-scroll-link" href="#">HOME</a></li>
+            <li><a class="js-scroll-link" href="#">Projects</a></li>
+            <li><a class="js-scroll-link" href="#">awwards</a></li>
+            <li><a class="js-scroll-link" href="#">testimonials</a></li>
+            <li><a class="js-scroll-link" href="#">experience</a></li>
+            <li class="active"><a class="js-scroll-link" href="#">blog</a></li>
+            <li><a class="js-scroll-link" href="#">CONTACT</a></li>
+          </ul>
+          <div class="header__phone"><a href="tel:+23155908368">+2(315) 590 83 68</a></div>
+        </div>
+      </div>
+      
+<div class="desaparecer">
+ <hr style="opacity:1;size:1">
+ <div grid-row="" grid-pad="0" grid-gutter="0">
+  <div grid-col="4" grid-pad="0" class="">
+
+<small>︎Area</small></div>
+  <div grid-col="6" grid-pad="0" class=""><small>
+
+ ︎Project</small></div>
+  <div grid-col="2" grid-pad="0" class=""><div style="text-align: right;"><small>︎Date</small></div></div>
+</div><br>
+
+<a name="top"></a>
+<div grid-row="" grid-pad="0" grid-gutter="0">
+  <div grid-col="4" grid-pad="0">
+
+<hr>︎ Exposition<br>
+<hr>︎&nbsp;Editorial / Branding<br>
+<hr>︎ Branding<br>
+<hr>︎ Typography<br>
+<hr>︎ Event / Branding<br>
+<hr>︎ Editorial<br>
+<hr>︎ Exposition / Illustration<br>
+<hr>︎ Illustration<br>
+<hr>︎ Art Direction<br>
+<hr>︎ Inphographics<br>
+<hr>︎ Typography / Illustration<br>
+<hr>︎ Illustration<hr>︎ Illustration<hr>︎ Typography / Illustration
+<hr>
+</div>
+
+  <div grid-col="6" grid-pad="0">
+<div class="menu">
+<hr><a href="Spanish-Freak-show" rel="history"></a><a href="Spanish-Freak-show" rel="history">Spanish Freak Show</a><hr><a class="price-features" href="Azul" rel="history">Azul Magazine</a>
+<hr><a href="Velaz" rel="history">Velaz Music</a>
+<br><hr><a href="Pysoni-Number-Type" rel="history">Pysoni Numerology</a><hr><a href="Oh-Holy-Festivals" rel="history">Oh Holy Festivals!</a>
+<hr><a href="Informe-Oh-Holy-Festivals" rel="history">Oh Holy Festivals! - Informe</a>
+<hr><a href="FastExpo-17" rel="history">FastExpo'17</a>
+<hr><a href="Kam_air_sutra" rel="history">Kam_air_sutra</a>
+<hr><a href="Europe-mode" rel="history">Europe Mode Catalogue</a>
+<hr><a href="Infografias-Yorokobu-Mag" rel="history">Infografías - Yorokobu Mag</a><br><hr><a href="Numerografia-79" rel="history">Numerografía 79- Yorokobu Mag</a>
+<hr><a href="Chamartin-Station" rel="history">Chamartín Station Map</a><br><hr><a href="Plano-Festival-SOS4-8" rel="history">Plano Festival SOS4.8</a><hr><a href="Moustachetype" rel="history">Moustachetype - 36DaysofType</a><br><hr>
+
+
+  
+</div>
+</div>
+<div grid-col="2" grid-pad="0" class=""><div style="text-align: right;"><hr>25.08.18<br><hr>15.07.18<br>
+<hr>11.06.18<br><hr>23.04.18<br><hr>14.03.18<br><hr>27.02.18<br>
+<hr>20.12.17<br>
+<hr>18.11.17<br>
+<hr>03.09.17<br>
+<hr>2016-17<br>
+<hr>01.12.16<br>
+<hr>03.07.16<br>
+<hr>30.04.16<br>
+<hr>07.03.15
+
+<hr></div></div>
+</div><div></div></div>
+
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

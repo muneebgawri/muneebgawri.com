@@ -6,8 +6,8 @@ $message = $_POST["msg"];
 
 
 
-$EmailTo = "lidiapushkar429@gmail.com";
-$Title = "New Message Received";
+$EmailTo = "muneebgawri@gmail.com";
+$Title = "New Message Received From Your Portfolio";
 
 // prepare email body text
 $Fields .= "Name: ";

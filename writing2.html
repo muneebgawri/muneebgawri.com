@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <title>Blog</title>
+    <link href="css/blog_page.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon_1.ico" type="image/x-icon">
+    <style>
+      @keyframes animate-circle {
+        from {
+          transform: scale(0);
+          opacity: 1;
+        }
+        to {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+      #preloader{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: #1C1C1C;
+        background: linear-gradient(to right, rgba(36, 31, 31, 1) 0%, rgba(36, 31, 31, 1) 32%, rgba(74, 71, 70, 1) 100%);
+      }
+      .loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 10rem;
+        width: 10rem;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      .loader > .circle {
+        position: absolute;
+        height: inherit;
+        width: inherit;
+        background: #B66449;
+        border-radius: 0;
+        animation: animate-circle 2s cubic-bezier(.9, .24, .62, .79) infinite;
+      }
+      .loader > .circle:nth-of-type(1) {
+        animation-delay: 0s;
+      }
+      .loader > .circle:nth-of-type(2) {
+        animation-delay: calc(2s / -3);
+      }
+      .loader > .circle:nth-of-type(3) {
+        animation-delay: calc(2s / -6);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <main class="main blog_page">
+      <canvas class="noise" id="noise"></canvas>
+      <div class="header">
+        <canvas class="noise noise--inner" id="noise_menu"></canvas>
+        <div class="header__left">
+          <div class="header__letter">P</div>
+          <div class="header__socials"><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#fb"></use>
+              </svg></a><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#tw"></use>
+              </svg></a><a href="" target="_blank">
+              <svg>
+                <use xlink:href="./svg/sprite.svg#in"></use>
+              </svg></a></div>
+        </div>
+        <div class="header__right">
+          <ul class="blog_page-menu">
+            <li><a class="js-scroll-link" href="#">HOME</a></li>
+            <li><a class="js-scroll-link" href="#">Projects</a></li>
+            <li><a class="js-scroll-link" href="#">awwards</a></li>
+            <li><a class="js-scroll-link" href="#">testimonials</a></li>
+            <li><a class="js-scroll-link" href="#">experience</a></li>
+            <li class="active"><a class="js-scroll-link" href="#">blog</a></li>
+            <li><a class="js-scroll-link" href="#">CONTACT</a></li>
+          </ul>
+          <div class="header__phone"><a href="tel:+23155908368">+2(315) 590 83 68</a></div>
+        </div>
+      </div>
+      <section class="blog_page-content">
+        <div class="blog_page-container">
+                <div>
+        <div class="home-page">
+          <div>
+            <section class="news">
+              </div>
+              <div class="content">
+                <div>
+                  <div class="content__title">
+                    <div><br><br> </div>
+                    <div class="h1">latest</div>
+                    <div class="h1">articles</div>
+                    <div class="small">allow me to introduce to my humble blog dwellings</div>
+                  </div>
+                  <ul class="content__menu news__menu">
+                    <li class="active"><a href="javascript:;">Remembering Saeed Khan, The ‘Rangeela’ Afghan Actor Who Ruled Lollywood</a></li>
+                    <li><a href="javascript:;">Lemon Illustration design</a></li>
+                    <li><a href="javascript:;">Paul theme Branding</a></li>
+                    <li><a href="javascript:;">Best typography 2020</a></li>
+                    <li><a href="javascript:;">my name is pattison</a></li>
+                  </ul>
+                  <div class="content__btn-block">
+                    <div class="content__btn-label small">View all works</div><a class="content__btn-btn btn btn--arrow" href="blog.html" target="_blank">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
