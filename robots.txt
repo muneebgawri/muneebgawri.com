@@ -1,0 +1,17 @@
+User-agent: ia_archiver
+Disallow: /
+
+User-Agent: *
+Allow: /
+
+Disallow: /cdn-cgi/l/email-protection
+Disallow: /author/admin/
+Disallow: /plugins/feedback.php*
+Disallow: /_page1.html*
+Disallow: /video/embed?
+Disallow: /story.aspx*
+Disallow: /preview/*
+Disallow: /user/*
+Disallow: /?s=*
+Disallow: /rd?url=*
+Allow: /rd?url=*muneebgawri.com/*
